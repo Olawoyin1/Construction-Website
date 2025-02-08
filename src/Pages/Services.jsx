@@ -1,6 +1,7 @@
 import React from 'react'
 import ServiceCard from '../Components/ServiceCard'
 import Navbar from '../Components/Navbar'
+import FAQ from '../Components/FAQ'
 
 const Services = () => {
   return (
@@ -11,6 +12,7 @@ const Services = () => {
             <small className="muted">Comprehensive, expert care for your health needs.</small>
         </div>
         <ServiceCard />
+        <FAQ />
     </div>
   )
 }
