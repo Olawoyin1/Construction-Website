@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 const Hero = () => {
   return (
     <div id='hero'>
+        <Navbar />
         <div className="container2">
             <div className="hero-text d-flex flex-column justify-content-center gap-3">
                 <h1 className='fw-bolder text-white'>Let Us Plan Your Big <span>Construction</span></h1>
