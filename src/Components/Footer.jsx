@@ -4,6 +4,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { GrInstagram } from "react-icons/gr";
 import { FaFacebookF } from "react-icons/fa6";
+import { TbArrowBadgeRightFilled } from "react-icons/tb";
+import { FaPhone } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -34,28 +36,28 @@ const Footer = () => {
 
                 <ul className='p-0 mt-5 mt-sm-4 d-flex align-items-center justify-content-center justify-content-sm-start align-items-sm-start flex-column gap-3  text-center text-sm-start'>
                     <h6 className='fw-bold'>Services</h6>
-                    <li className='d-flex flex-sm-row flex-column align-items-center gap-2'>
-                        
+                    <li className='d-flex align-items-center justify-content-center justify-content-sm-start align-items-sm-start  align-items-center gap-2'>
+                    <TbArrowBadgeRightFilled />
                         <small>Interior Design</small>
                     </li>                  
-                    <li className='d-flex flex-sm-row flex-column align-items-center gap-2'>
-                        
+                    <li className='d-flex align-items-center justify-content-center justify-content-sm-start align-items-sm-start  align-items-center gap-2'>
+                    <TbArrowBadgeRightFilled />
                         <small>Budget Planning</small>
                     </li>                    
-                    <li className='d-flex flex-sm-row flex-column align-items-center gap-2'>
-                        
+                    <li className='d-flex align-items-center justify-content-center justify-content-sm-start align-items-sm-start align-items-center gap-2'>
+                    <TbArrowBadgeRightFilled />
                         <small>Construction Management</small>
                     </li>                    
-                    <li className='d-flex flex-sm-row flex-column align-items-center gap-2'>
-                       
+                    <li className='d-flex align-items-center justify-content-center justify-content-sm-start align-items-sm-start  align-items-center gap-2'>
+                    <TbArrowBadgeRightFilled />
                         <small>Architecture Services</small>
                     </li>                                       
-                    <li className='d-flex flex-sm-row flex-column align-items-center gap-2'>
-                       
+                    <li className='d-flex align-items-center justify-content-center justify-content-sm-start align-items-sm-start  align-items-center gap-2'>
+                    <TbArrowBadgeRightFilled />
                         <small>Tiling & Painting</small>
                     </li>                                       
-                    <li className='d-flex flex-sm-row flex-column align-items-center gap-2'>
-                       
+                    <li className='d-flex align-items-center justify-content-center justify-content-sm-start align-items-sm-start  align-items-center gap-2'>
+                    <TbArrowBadgeRightFilled />   
                         <small>Project Planning</small>
                     </li>                                       
                 </ul>
@@ -64,7 +66,7 @@ const Footer = () => {
                 <ul className='p-0 d-flex align-items-center justify-content-center justify-content-sm-start align-items-sm-start flex-column gap-3 text-center text-sm-start mt-5 mt-sm-4'>
                     <h6 className='fw-bold'>Quick Contact</h6>
                     <small>If you have any question or need help, feel free to contact our team</small>                   
-                    <h4 className='fw-bolder'>+(234) 8123443332</h4> 
+                    <h5 className='fw-bolder'> <FaPhone />+(234) 8123443332</h5> 
                     <small>No 19, Olarewaju Clement street, Oke Oko Isawo, Ikorodu Lagos State</small>                
                 </ul>
 
