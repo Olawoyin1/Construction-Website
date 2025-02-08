@@ -125,7 +125,7 @@ const WhyUs = () => {
 
   return (
     <div className="container2">
-      <div className="faq-header text-center my-5">
+      <div className="faq-header my-5">
         <h2 className="fw-bolder">Why Choose Us</h2>
         <small className="muted">
           Comprehensive, expert care for your health needs.
