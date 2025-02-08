@@ -380,11 +380,11 @@ p{
 }
 
 @media (max-width: 576px) {
-  .grid{
+  /* .grid{
     display: grid;
     grid-template-columns: 1fr ;
     gap: 1.7rem;
-  }
+  } */
 
   .hero-text h1{
     font-size: 2rem;
