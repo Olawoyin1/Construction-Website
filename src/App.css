@@ -7,7 +7,7 @@
   list-style-type: none !important;
   text-decoration: none !important;
   font-family: "Poppins", system-ui;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-decoration: none;
   font-family: "Poppins", serif;
   margin: 0 !important;
@@ -84,3 +84,21 @@ p{
   font-weight: 600;
   opacity: 0.7 !important;
 }
+
+
+
+
+
+
+/* =========FOOTER STYLES========= */
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem !important;
+}
+
+.footer li {
+
+  width: 100% !important;
+}
+
