@@ -215,7 +215,7 @@ const FAQ = () => {
             >
               <div className="faq-head d-flex align-items-center justify-content-between">
                 <div className="d-flex align-items-center gap-3">
-                  <div className="num d-none d-md-flex text-white align-items-center justify-content-center">
+                  <div className="num d-none d-md-flex fw-bold align-items-center justify-content-center">
                     0{faq.id}
                   </div>
                   <p className="fw-bold faq-q">{faq.question}</p>

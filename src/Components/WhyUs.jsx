@@ -83,6 +83,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { TbHelpSquareFilled } from "react-icons/tb";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -126,7 +127,10 @@ const WhyUs = () => {
   return (
     <div className="container2">
       <div className="faq-header my-5">
-        <h2 className="fw-bolder">Why Choose Us</h2>
+        <div className="d-flex gap-3 align-items-center">
+          <TbHelpSquareFilled size={34}/>
+          <h2 className="fw-bolder">Why Choose Us</h2>
+        </div>
         <small className="muted">
           Comprehensive, expert care for your health needs.
         </small>

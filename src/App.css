@@ -191,6 +191,10 @@ p{
   width: 100% !important;
 }
 
+.footer{
+  background-color: #181938 !important;
+}
+
 .social{
   z-index: -1;
 }
@@ -201,13 +205,18 @@ p{
 /* =======CONTACT CARD STYLES======== */
 .contact-card-image{
   width: fit-content !important;
-  background: linear-gradient(135deg, #edf0f4, #dee1e5);
+ 
+}
+
+.main-contact-card{
+  background-color: #04061f;
 }
 
 
 .contact-info{
   border: 1px solid #cccccc7e;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  background: linear-gradient(135deg, #edf0f4, #dee1e5);
 }
 
 /* ======FAQ STYLES ======= */
@@ -249,7 +258,7 @@ p{
   left: 4%;
   width: 90%;
   height: 2px;
-  background-image: linear-gradient(40deg, black, #d803034e, rgba(0, 0, 0, 0.719) );
+  background-image: linear-gradient(40deg, black, #e7be06, rgba(0, 0, 0, 0.719) );
 }
 
 .faq-btn{
@@ -268,7 +277,8 @@ p{
   width: 2.4rem;
   height: 2.4rem;
   font-size: 13px;
-  background-color: #1F1F1F;
+  color: #333 !important;
+  background-color: #e7be06;
 }
 
 
@@ -382,6 +392,7 @@ border: 1px solid #cccccc80;
     background-image: url('../public/Images/parallax.jpg');
     background-size: cover;
     background-position: center;
+    background-color: none;
   }
   
   .hero-text{

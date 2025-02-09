@@ -103,7 +103,7 @@ import { FaPhone } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className='py-2 footer pb-5 m-0'>
+    <div className='py-2 footer text-white pb-5 m-0'>
         <div className="container2">
             <div className="grid flex-wrap">
 
