@@ -143,8 +143,6 @@ p{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  /* background-color: #1f1f1f77; */
-  background-blend-mode: multiply;
 
 }
 
@@ -213,7 +211,7 @@ p{
 
 .mobile-menu{
   z-index: 2 !important;
-  background: linear-gradient(135deg, #edf0f4, #dee1e5a5);
+  background: linear-gradient(135deg, #edf0f4, #dee1e555);
   backdrop-filter: blur(10px) !important;
 }
 
