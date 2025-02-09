@@ -18,7 +18,7 @@ small{
   font-size: 13px !important;
 }
 
-input{
+input, textarea{
   padding: 9px 1rem;
   display: block;
   width: 100% !important;
@@ -92,6 +92,49 @@ p{
   font-size: 14px !important;
   color: #333 !important;
 }
+
+
+
+
+
+/* =======FORM STYLES======== */
+.form-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 400px;
+}
+
+.form-field{
+  background-color: #ffffff;
+}
+
+.form-field input, .form-field textarea{
+  border: 1px solid #ccc;
+  background-color: #f1f1f1 !important;;
+  outline: none !important;
+  
+}
+
+.form-field textarea{
+  height: 100px;
+  width: 100%;
+}
+
+
+.form-image{
+  object-fit: cover ;
+  background-color: red;
+}
+
+.form-image img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+
+
+
 
 
 /* =====HERO STYLES======== */
@@ -277,8 +320,8 @@ p{
   width: 2.4rem;
   height: 2.4rem;
   font-size: 13px;
-  color: #333 !important;
-  background-color: #e7be06;
+  color: #ffffff;
+  background-color: #181938;
 }
 
 
@@ -337,11 +380,16 @@ p{
 }
 
 
-.trusted-cards, .trusted, .card-bg{
+.trusted-cards, .trusted{
 border: 1px solid #cccccc80;
   background-image: linear-gradient(40deg, #f1f1f1, #E5E8EE);
 }
 
+
+.card-bg{
+  background-color: #04061f;
+  color: #ffffff;
+}
 
 
 
@@ -397,6 +445,11 @@ border: 1px solid #cccccc80;
   
   .hero-text{
     min-height: 40vh !important;
+    
+  }
+
+  .form-grid{
+    grid-template-columns: 1fr;
     
   }
   

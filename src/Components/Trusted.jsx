@@ -34,25 +34,40 @@ const Trusted = () => {
                     </div>
                 </div>
                 <div className="trusted d-flex flex-column gap-3 p-3">
-                    <h5 className='fw-bold'>Start Building Now</h5>
-                    <small className="muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt aut incidunt saepe quos similique rerum quam porro quia nemo repellendus veniam numquam nesciunt, mollitia voluptate ad praesentium qui, ipsum vitae!</small>
+                    <h6 className='fw-bold'>Start Building Now</h6>
+                    <small className="muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt aut incidunt saepe quos similique rerum quam porro quia nemo repellendus </small>
                     
-                    <h5 className='fw-bold'>Our Process</h5>
-                    <div className="d-flex gap-3 align-items-center">
-                        <MdOutlineDoubleArrow />
-                        <h6>Planning</h6>
-                    </div>
-                    <div className="d-flex gap-3 align-items-center">
-                        <MdOutlineDoubleArrow />
-                        <h6>Planning</h6>
-                    </div>
-                    <div className="d-flex gap-3 align-items-center">
-                        <MdOutlineDoubleArrow />
-                        <h6>Planning</h6>
-                    </div>
-                    <div className="d-flex gap-3 align-items-center">
-                        <MdOutlineDoubleArrow />
-                        <h6>Planning</h6>
+                    <h6 className='fw-bold'>Our Process</h6>
+                    <div className='grid4 gap-3'>
+                        <div className="d-flex gap-1">
+                            <MdOutlineDoubleArrow />
+                            <div>
+                                <p className='fw-bold'>Planning</p>
+                                <small className="muted">Lorem ipsum dolor sit amet consectetur adipisicing </small>
+                            </div>
+                        </div>
+                        <div className="d-flex gap-1">
+                            <MdOutlineDoubleArrow />
+                            <div>
+                                <p className='fw-bold'>Design</p>
+                                <small className="muted">Lorem ipsum dolor sit amet consectetur adipisicing </small>
+                            </div>
+                        </div>
+                        <div className="d-flex gap-1">
+                            <MdOutlineDoubleArrow />
+                            <div>
+                                <p className='fw-bold'>Implement</p>
+                                <small className="muted">Lorem ipsum dolor sit amet consectetur adipisicing </small>
+                            </div>
+                        </div>
+                        <div className="d-flex gap-1">
+                            <MdOutlineDoubleArrow />
+                            <div>
+                                <p className='fw-bold'>Hand Over</p>
+                                <small className="muted">Lorem ipsum dolor sit amet consectetur adipisicing </small>
+                            </div>
+                        </div>
+                       
                     </div>
 
                 </div>
