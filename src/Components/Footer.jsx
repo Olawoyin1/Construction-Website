@@ -110,7 +110,7 @@ const Footer = () => {
                 <ul className='p-0  mt-5 mt-sm-4 d-flex  justify-content-sm-start align-items-sm-start flex-column gap-3 '>
                     <h6 className='fw-bold'>Konstruction.</h6>
                     <small className=' text-sm-start'>Get the care you deserve with our reliable, professional, and patient-focused healthcare services.</small>
-                    <div className="socials d-flex align-items-center gap-3">
+                    <div className="socials  d-flex align-items-center gap-3">
                         <FaXTwitter className='muted' size={20}/>
                         <FaLinkedinIn className='muted' size={20}/>
                         <GrInstagram className='muted' size={20}/>
