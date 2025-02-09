@@ -225,7 +225,7 @@ const Hero = () => {
             onClick={toggleMenu}
             whileTap={{ scale: 0.9 }}
           >
-            {menuOpen ? <RiCloseLine size={24} /> : <RiMenu4Line size={24} />}
+            {menuOpen ? <RiCloseLine size={24} color="#ffffff" /> : <RiMenu4Line color="#ffffff" size={24} />}
           </motion.div>
         </nav>
 
