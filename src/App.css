@@ -368,7 +368,7 @@ border: 1px solid #cccccc80;
 
   #hero{
     min-height: 700px !important;
-    background-image: url('../public/Images/counter-bg.jpg');
+    background-image: url('../public/Images/parallax.jpg');
     background-size: cover;
     background-position: center;
   }
