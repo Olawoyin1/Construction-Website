@@ -2,6 +2,7 @@ import React from 'react'
 import ServiceCard from '../Components/ServiceCard'
 import Navbar from '../Components/Navbar'
 import FAQ from '../Components/FAQ'
+import ContactCard from '../Components/ContactCard'
 
 const Services = () => {
   return (
@@ -13,6 +14,7 @@ const Services = () => {
         </div>
         <ServiceCard />
         <FAQ />
+        <ContactCard />
     </div>
   )
 }

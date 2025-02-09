@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { RiMenu4Line } from "react-icons/ri";
 
 const Navbar = () => {
 
@@ -18,6 +19,8 @@ const Navbar = () => {
                     <button className='main-btn'>+(234) 8123499082</button>
                    
                 </ul>
+
+                <RiMenu4Line size={24} className='d-flex d-md-none' />
 
             </nav>
         </div>

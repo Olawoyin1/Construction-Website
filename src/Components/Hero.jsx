@@ -143,6 +143,8 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+import { RiMenu4Line } from "react-icons/ri";
+
 const words = ["Dreams", "Masterpiece", "Ideas", "Space"];
 
 const Hero = () => {
@@ -224,6 +226,9 @@ const Hero = () => {
 
               <button className="main-btn">+(234) 8123499082</button>
             </ul>
+
+
+             <RiMenu4Line size={24} color="#ffffff" className='d-flex d-md-none' />
           </nav>
         </div>
       </div>

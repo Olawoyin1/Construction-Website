@@ -69,7 +69,7 @@ button{
 
 body{
   color: #333 !important;
-  background-color: #E5E8EE !important;
+  background-color: #e5e8ee74 !important;
   overflow-x: hidden !important;
 }
 
@@ -90,13 +90,13 @@ p{
 
 .nav-link{
   font-size: 14px !important;
+  color: #333;
 }
 
 
 /* =====HERO STYLES======== */
 #hero{
   background-image: url('../public/Images/slider-bg-2.jpg');
-  min-height: 100vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -108,7 +108,7 @@ p{
 
 .hero-text {
   max-width: 490px;
-  height: 100vh;
+  height: 590px;
 }
 
 
@@ -158,7 +158,7 @@ p{
 .main-navbar{
   background: linear-gradient(135deg, #edf0f40f, #dee1e52c);
   /* color: #ffffff !important; */
-  z-index: -1;
+  /* z-index: -1; */
   backdrop-filter: blur(1px);
 }
 
@@ -185,6 +185,19 @@ p{
 }
 
 
+
+
+/* =======CONTACT CARD STYLES======== */
+.contact-card-image{
+  width: fit-content !important;
+  background: linear-gradient(135deg, #edf0f4, #dee1e5);
+}
+
+
+.contact-info{
+  border: 1px solid #cccccc7e;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
 
 /* ======FAQ STYLES ======= */
 
@@ -354,7 +367,7 @@ border: 1px solid #cccccc80;
   
 
   #hero{
-    min-height: 70vh !important;
+    min-height: 700px !important;
     background-image: url('../public/Images/counter-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -393,6 +406,6 @@ border: 1px solid #cccccc80;
   }
 
   .hero-text h1{
-    font-size: 2rem;
+    font-size: 2.7rem;
   }
 }
