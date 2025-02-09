@@ -96,30 +96,30 @@ const Navbar = () => {
         <AnimatePresence>
           {menuOpen && (
             <motion.ul
-              initial={{ y: "-100%", opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: "-100%", opacity: 0 }}
+              initial={{ x: "-100%", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: "-100%", opacity: 0 }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="mobile-menu d-flex flex-column gap-3 vh-100  p-4"
               style={{ zIndex: 1100 }}
             >
               <li>
-                <Link className="nav-link" to="/" onClick={toggleMenu}>
+                <Link className="nav-link text-white py-2" to="/" onClick={toggleMenu}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="/services" onClick={toggleMenu}>
+                <Link className="nav-link text-white py-2" to="/services" onClick={toggleMenu}>
                   Services
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="/about" onClick={toggleMenu}>
+                <Link className="nav-link text-white py-2" to="/about" onClick={toggleMenu}>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="/contact" onClick={toggleMenu}>
+                <Link className="nav-link text-white py-2" to="/contact" onClick={toggleMenu}>
                   Contact
                 </Link>
               </li>
