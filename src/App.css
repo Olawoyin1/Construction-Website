@@ -144,6 +144,9 @@ p{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  
+  background-color: #ccc !important;
+  background-blend-mode: multiply;
 
 }
 
@@ -451,8 +454,15 @@ border: 1px solid #cccccc80;
     background-image: url('../public/Images/parallax.jpg') !important;
     background-size: cover;
     background-position: center;
-    background-color: none;
     background-attachment: scroll;
+    background-color: #ccc !important;
+    background-blend-mode: multiply;
+  }
+
+  .main-navbar{
+    background-color: transparent !important;
+    border-bottom: none !important;
+    background-image: none;
   }
 
   .card-bg{
