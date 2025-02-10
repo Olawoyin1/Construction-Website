@@ -8,7 +8,7 @@ const Form = () => {
             <h2 className='fw-bolder'>Would You Like To Discuss A Project</h2>
             <small className="muted">Ready to turn your concept into reality? Our team is here to listen, advise, and collaborate. Fill Out the form below to initiate a project discussion.</small>
         </div>
-            <div className="form-grid">
+            <div className="form-grid my-5">
                 <div className="form-image">
                     <img src="../../Images/home-post-2-418x315.jpg" alt="" />
                 </div>

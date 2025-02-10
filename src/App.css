@@ -394,6 +394,10 @@ border: 1px solid #cccccc80;
 .card-bg{
   background-color: #04061f;
   color: #ffffff;
+  background-image: url('../public/Images/counter-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 

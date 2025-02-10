@@ -215,22 +215,22 @@ const Hero = () => {
             {/* Desktop Menu */}
             <ul className="p-0 d-none d-md-flex gap-4 align-items-center">
               <li>
-                <Link className="nav-link" to="/">
+                <Link className="nav-link text-white" to="/">
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="/services">
+                <Link className="nav-link text-white" to="/services">
                   Services
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link text-white" to="/about">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link text-white" to="/contact">
                   Contact
                 </Link>
               </li>

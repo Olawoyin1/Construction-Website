@@ -45,8 +45,8 @@ const Card = () => {
   }
 
   return (
-    <div className='my-4'>
-      <div className="container2 card-bg">
+    <div className='my-4 card-bg'>
+      <div className="container2 ">
         <motion.div
           className="trial p-md-5 p-4 d-flex align-items-center gap-3 flex-column flex-md-row justify-content-center justify-content-md-between"
           initial="hidden"
