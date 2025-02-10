@@ -132,7 +132,7 @@ const WhyUs = () => {
           <h2 className="fw-bolder">Why Choose Us</h2>
         </div>
         <small className="muted">
-          Comprehensive, expert care for your health needs.
+          Your vision, our expertise - together, we create something amazing
         </small>
       </div>
 

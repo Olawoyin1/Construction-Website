@@ -10,7 +10,7 @@ const Services = () => {
         <Navbar />
         <div className="faq-header text-center my-5">
             <h2 className='fw-bolder'>We Provide Demanding Services</h2>
-            <small className="muted">Comprehensive, expert care for your health needs.</small>
+            <small className="muted">Transforming spaces with our comprehensive construction services.</small>
         </div>
         <ServiceCard />
         <FAQ />

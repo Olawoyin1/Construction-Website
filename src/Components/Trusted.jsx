@@ -99,7 +99,7 @@ const Trusted = () => {
       <div className="container2">
         <div className="faq-header text-center my-5">
           <h2 className='fw-bolder'>Your Trusted Construction Agent</h2>
-          <small className="muted">Comprehensive, expert care for your health needs.</small>
+          <small className="muted">Building trust through quality construction and exceptional service.</small>
         </div>
         <div className="trusted-grid my-3">
           <div className="trusted-grid2">

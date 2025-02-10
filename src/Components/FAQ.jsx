@@ -140,7 +140,7 @@ const FAQ = () => {
           viewport={{ once: true }}
         >
           <h2 className='fw-bolder'>FAQ</h2>
-          <small className="muted">Common Questions, Clear Answers.</small>
+          <small className="muted">Get informed, get answers, and get started on your project.</small>
         </motion.div>
 
         {/* FAQ Section */}

@@ -6,7 +6,7 @@ const Form = () => {
         <div className="container2">
         <div className="faq-header text-center my-5">
             <h2 className='fw-bolder'>Would You Like To Discuss A Project</h2>
-            <small className="muted">Comprehensive, expert care for your health needs.</small>
+            <small className="muted">Ready to turn your concept into reality? Our team is here to listen, advise, and collaborate. Fill Out the form below to initiate a project discussion.</small>
         </div>
             <div className="form-grid">
                 <div className="form-image">
