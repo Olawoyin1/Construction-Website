@@ -6,11 +6,13 @@ import FAQ from '../Components/FAQ'
 import Trusted from '../Components/Trusted'
 import Hero from '../Components/Hero'
 import ContactCard from '../Components/ContactCard'
+import Intro from '../Components/Intro'
 
 const Home = () => {
   return (
     <div>
         <Hero />
+        <Intro />
         <Trusted />
         <WhyUs />
         <Card />

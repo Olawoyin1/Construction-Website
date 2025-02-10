@@ -48,20 +48,17 @@ const Card = () => {
     <div className='my-4 card-bg'>
       <div className="container2 ">
         <motion.div
-          className="trial p-md-5 p-4 d-flex align-items-center gap-3 flex-column flex-md-row justify-content-center justify-content-md-between"
+          className="trial p-md-5 p-4 d-flex align-items-center gap-3 flex-column  justify-content-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp} // Apply the fade-up animation to the entire container
         >
           {/* Card Text */}
-          <div className="card-text d-flex gap-2 flex-column left text-center text-md-start">
-            <motion.h4 className='fw-bold text-uppercase' variants={fadeUp}>
-              If You Can Envision It, Then We Can Build It
+          <div className="card-text d-flex gap-5 flex-column  text-center text-md-start">
+            <motion.h4 className='fw-bold mb-4 text-center text-uppercase' variants={fadeUp}>
+              WE UNDERSTAND THE VALUE OF YOUR DREAM AND WE PROMISE TO GIVE YOU THE BEST ONE
             </motion.h4>
-            <motion.small className="muted text-capitalize" variants={fadeUp}>
-              Tell us more about your project
-            </motion.small>
           </div>
 
           {/* Button with bounce effect */}

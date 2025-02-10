@@ -358,8 +358,12 @@ const Hero = () => {
             className="actions d-flex gap-3"
             variants={staggerVariants}
           >
-            <button className="main-btn">Our Services</button>
-            <button className="main-btn">Contact Us</button>
+            <Link to='/services'>
+              <button className="main-btn">Our Services</button>
+            </Link>
+            <Link to='contact'>
+              <button className="main-btn">Contact Us</button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
