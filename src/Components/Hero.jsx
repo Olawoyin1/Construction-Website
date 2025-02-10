@@ -21,8 +21,6 @@
 
 // // export default Hero
 
-
-
 // import React, { useState, useEffect } from "react";
 // import { motion, AnimatePresence } from "framer-motion";
 // import { Link } from 'react-router-dom'
@@ -76,25 +74,21 @@
 //             <div className="container2">
 //                 <nav className='d-flex header align-items-center justify-content-between'>
 //                     <Link to="/"><h4 className="navbar-brand  fw-bolder">Konstruction.</h4></Link>
-    
+
 //                     <ul className="p-0 d-none d-md-flex gap-4 align-items-center">
 //                         <li><Link className='nav-link text-white'  to="/">Home</Link></li>
 //                         <li><Link className='nav-link text-white'  to="/services">Services</Link></li>
 //                         <li><Link className='nav-link text-white' to="/about">About Us</Link></li>
 //                         <li><Link className='nav-link text-white'  to="/appointment">Contact</Link></li>
-                        
+
 //                         <button className='main-btn'>+(234) 8123499082</button>
-                        
+
 //                     </ul>
-    
+
 //                 </nav>
 //             </div>
 //         </div>
 //       <div className="container2">
-
-        
-
-
 
 //         <motion.div
 //           className="hero-text d-flex flex-column justify-content-center gap-3"
@@ -119,8 +113,8 @@
 //           </motion.h1>
 
 //           <motion.small className="text-white" variants={staggerVariants}>
-//             We turn your vision into reality with precision and expertise. 
-//             Whether it's a modern masterpiece, a commercial hub, or an innovative space, 
+//             We turn your vision into reality with precision and expertise.
+//             Whether it's a modern masterpiece, a commercial hub, or an innovative space,
 //             our team ensures quality craftsmanship from planning to completion.
 //           </motion.small>
 
@@ -136,13 +130,10 @@
 
 // export default Hero;
 
-
-
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from 'framer-motion';
-import { RiMenu4Line, RiCloseLine } from 'react-icons/ri';
+import { motion, AnimatePresence } from "framer-motion";
+import { RiMenu4Line, RiCloseLine } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { GrInstagram } from "react-icons/gr";
@@ -151,13 +142,11 @@ import { FaFacebookF } from "react-icons/fa6";
 const words = ["Dreams", "Masterpiece", "Ideas", "Space"];
 
 const Hero = () => {
-
   const [menuOpen, setMenuOpen] = useState(false);
-  
-    const toggleMenu = () => {
-      setMenuOpen(!menuOpen);
-    };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
@@ -168,7 +157,9 @@ const Hero = () => {
     const currentWord = words[index];
     const updateText = () => {
       setText((prev) =>
-        isDeleting ? currentWord.substring(0, prev.length - 1) : currentWord.substring(0, prev.length + 1)
+        isDeleting
+          ? currentWord.substring(0, prev.length - 1)
+          : currentWord.substring(0, prev.length + 1)
       );
 
       if (!isDeleting && text === currentWord) {
@@ -207,104 +198,136 @@ const Hero = () => {
     <motion.div id="hero">
       {/* Navbar */}
       <div
-            className="main-navbar border-bottom  d-md-block"
-            style={{ width: "100%", zIndex: 1050 }}
-          >
-            <div className="container2">
-              <nav className="d-flex header align-items-center justify-content-between">
-                <Link to="/">
-                  <h4 className="navbar-brand fw-bolder">Konstruction.</h4>
+        className="main-navbar border-bottom  d-md-block"
+        style={{
+          position: menuOpen ? "fixed" : "static",
+          top: 0,
+          width: "100%",
+          zIndex: 1050,
+        }}
+      >
+        <div className="container2">
+          <nav className="d-flex header align-items-center justify-content-between">
+            <Link to="/">
+              <h4 className="navbar-brand fw-bolder">Konstruction.</h4>
+            </Link>
+
+            {/* Desktop Menu */}
+            <ul className="p-0 d-none d-md-flex gap-4 align-items-center">
+              <li>
+                <Link className="nav-link" to="/">
+                  Home
                 </Link>
-      
-                {/* Desktop Menu */}
-                <ul className="p-0 d-none d-md-flex gap-4 align-items-center">
-                  <li>
-                    <Link className="nav-link" to="/">
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="nav-link" to="/services">
-                      Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="nav-link" to="/about">
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="nav-link" to="/contact">
-                      Contact
-                    </Link>
-                  </li>
-                  <button className="main-btn">+(234) 8123499082</button>
+              </li>
+              <li>
+                <Link className="nav-link" to="/services">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-link" to="/about">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-link" to="/contact">
+                  Contact
+                </Link>
+              </li>
+              <button className="main-btn">+(234) 8123499082</button>
+            </ul>
+
+            {/* Mobile Menu Button */}
+            <motion.div
+              className="d-flex d-md-none"
+              onClick={toggleMenu}
+              whileTap={{ scale: 0.9 }}
+            >
+              {menuOpen ? <RiCloseLine size={24} /> : <RiMenu4Line size={24} />}
+            </motion.div>
+          </nav>
+
+          {/* Mobile Menu */}
+          <AnimatePresence>
+            {menuOpen && (
+              <motion.ul
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: "-100%", opacity: 0 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+                className="mobile-menu d-flex flex-column gap-3  vh-100 py-4  p-4"
+                style={{ zIndex: 1100 }}
+              >
+                <li className="mt-5">
+                  <Link
+                    className="nav-link text-white py-2"
+                    to="/"
+                    onClick={toggleMenu}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="nav-link text-white py-2"
+                    to="/services"
+                    onClick={toggleMenu}
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="nav-link text-white py-2"
+                    to="/about"
+                    onClick={toggleMenu}
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="nav-link text-white py-2"
+                    to="/contact"
+                    onClick={toggleMenu}
+                  >
+                    Contact
+                  </Link>
+                </li>
+
+                <ul className="p-0  mt-2 mt-sm-4 d-flex  justify-content-sm-start align-items-sm-start flex-column gap-3 ">
+                  <h6 className="fw-bold">Konstruction.</h6>
+                  <small className=" text-sm-start">
+                    Get the care you deserve with our reliable, professional,
+                    and patient-focused healthcare services.
+                  </small>
+                  <div className="socials  d-flex align-items-center gap-3">
+                    <FaXTwitter className="muted" size={20} />
+                    <FaLinkedinIn className="muted" size={20} />
+                    <GrInstagram className="muted" size={20} />
+                    <FaFacebookF className="muted" size={20} />
+                  </div>
                 </ul>
-      
-                {/* Mobile Menu Button */}
+                <button className="main-btn mt-2" onClick={toggleMenu}>
+                  +(234) 8123499082
+                </button>
+
                 <motion.div
-                  className="d-flex d-md-none"
+                  className="mobile-menu-icon"
                   onClick={toggleMenu}
                   whileTap={{ scale: 0.9 }}
                 >
-                  {menuOpen ? <RiCloseLine size={24} /> : <RiMenu4Line size={24} />}
+                  {menuOpen ? (
+                    <RiCloseLine size={24} />
+                  ) : (
+                    <RiMenu4Line size={24} />
+                  )}
                 </motion.div>
-              </nav>
-      
-              {/* Mobile Menu */}
-              <AnimatePresence>
-                {menuOpen && (
-                  <motion.ul
-                    initial={{ x: "-100%", opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    exit={{ x: "-100%", opacity: 0 }}
-                    transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="mobile-menu d-flex flex-column gap-3 vh-100  p-4"
-                    style={{ zIndex: 1100 }}
-                  >
-                    <li>
-                      <Link className="nav-link text-white py-2" to="/" onClick={toggleMenu}>
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="nav-link text-white py-2" to="/services" onClick={toggleMenu}>
-                        Services
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="nav-link text-white py-2" to="/about" onClick={toggleMenu}>
-                        About Us
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="nav-link text-white py-2" to="/contact" onClick={toggleMenu}>
-                        Contact
-                      </Link>
-                    </li>
-                   
-      
-                    <ul className="p-0  mt-2 mt-sm-4 d-flex  justify-content-sm-start align-items-sm-start flex-column gap-3 ">
-                      <h6 className="fw-bold">Konstruction.</h6>
-                      <small className=" text-sm-start">
-                        Get the care you deserve with our reliable, professional, and
-                        patient-focused healthcare services.
-                      </small>
-                      <div className="socials  d-flex align-items-center gap-3">
-                        <FaXTwitter className="muted" size={20} />
-                        <FaLinkedinIn className="muted" size={20} />
-                        <GrInstagram className="muted" size={20} />
-                        <FaFacebookF className="muted" size={20} />
-                      </div>
-                    </ul>
-                    <button className="main-btn mt-2" onClick={toggleMenu}>
-                      +(234) 8123499082
-                    </button>
-                  </motion.ul>
-                )}
-              </AnimatePresence>
-            </div>
-          </div>
+              </motion.ul>
+            )}
+          </AnimatePresence>
+        </div>
+      </div>
 
       {/* Hero Section */}
       <div className="container2">
@@ -315,18 +338,26 @@ const Hero = () => {
           animate="visible"
         >
           {/* Animated heading with typewriter effect */}
-          <motion.h1 className="fw-bolder text-white" variants={staggerVariants}>
+          <motion.h1
+            className="fw-bolder text-white"
+            variants={staggerVariants}
+          >
             Let Us Build Your Big <span className="text-warning">{text}</span>
           </motion.h1>
 
           {/* Description */}
           <motion.small className="text-white" variants={staggerVariants}>
-            Transforming blueprints into reality with precision and expertise. Whether it's a luxury home, a modern 
-            masterpiece, or a commercial landmark, we bring your vision to life with cutting-edge technology and craftsmanship.
+            Transforming blueprints into reality with precision and expertise.
+            Whether it's a luxury home, a modern masterpiece, or a commercial
+            landmark, we bring your vision to life with cutting-edge technology
+            and craftsmanship.
           </motion.small>
 
           {/* Buttons */}
-          <motion.div className="actions d-flex gap-3" variants={staggerVariants}>
+          <motion.div
+            className="actions d-flex gap-3"
+            variants={staggerVariants}
+          >
             <button className="main-btn">Our Services</button>
             <button className="main-btn">Contact Us</button>
           </motion.div>

@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <div
       className="main-navbar border-bottom  d-md-block"
-      style={{ width: "100%", zIndex: 1050 }}
+      style={{ position:menuOpen? "fixed" : "static", top:0,width: "100%", zIndex: 1050 }}
     >
       <div className="container2">
         <nav className="d-flex header align-items-center justify-content-between">
@@ -100,10 +100,10 @@ const Navbar = () => {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: "-100%", opacity: 0 }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="mobile-menu d-flex flex-column gap-3 vh-100  p-4"
+              className="mobile-menu d-flex flex-column gap-3  vh-100 py-4  p-4"
               style={{ zIndex: 1100 }}
             >
-              <li>
+              <li className="mt-5">
                 <Link className="nav-link text-white py-2" to="/" onClick={toggleMenu}>
                   Home
                 </Link>
@@ -141,6 +141,15 @@ const Navbar = () => {
               <button className="main-btn mt-2" onClick={toggleMenu}>
                 +(234) 8123499082
               </button>
+
+
+              <motion.div
+                className="mobile-menu-icon"
+                onClick={toggleMenu}
+                whileTap={{ scale: 0.9 }}
+              >
+                {menuOpen ? <RiCloseLine size={24} /> : <RiMenu4Line size={24} />}
+              </motion.div>
             </motion.ul>
           )}
         </AnimatePresence>

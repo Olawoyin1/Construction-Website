@@ -14,7 +14,7 @@ const Form = () => {
                 </div>
                 <div className="form-field">
                     <form action="" className='p-4 d-flex justify-content-start align-items-start flex-column gap-4'>
-                        <h5 className='fw-bold'>Something</h5>
+                        <h5 className='fw-bold'>Reach Out To Us</h5>
                         <input type="text" placeholder='Enter Your Name' />
                         <input type="email" placeholder='Enter Your Email'/>
                         <input type="text" placeholder='Enter Your Phone'/>
