@@ -97,6 +97,8 @@ p{
 
 
 
+
+
 /* =======FORM STYLES======== */
 .form-grid{
   display: grid;
@@ -450,6 +452,11 @@ border: 1px solid #cccccc80;
     background-size: cover;
     background-position: center;
     background-color: none;
+    background-attachment: scroll;
+  }
+
+  .card-bg{
+    background-attachment: scroll !important;
   }
   
   .hero-text{
