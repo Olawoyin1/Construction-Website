@@ -8,7 +8,8 @@ import SharedLayout from './Components/SharedLayout.jsx'
 import About from './Pages/About.jsx';
 import Services from './Pages/Services.jsx';
 import Contact from './Pages/Contact.jsx';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (

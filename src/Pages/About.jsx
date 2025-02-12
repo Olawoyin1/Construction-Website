@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar'
 import ContactCard from '../Components/ContactCard'
 import Intro from '../Components/Intro'
 import Values from '../Components/Values'
+import Team from '../Components/Team'
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
         </div>
         <Intro />
         <Values />
+        <Team />
         <ContactCard />
     </div>
   )

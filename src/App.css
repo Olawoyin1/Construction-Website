@@ -233,7 +233,7 @@ p{
 }
 
 .logo{
-  max-width:  140px;
+  max-width:  100px;
 }
 
 .main-navbar{
@@ -267,14 +267,14 @@ p{
 
 
 /* =======VALUES STYLES=[======== */
-/* ======SERVICES STYLES====== */
+
 .grid1{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
 
-.service-card{
+.service-card2{
   position: relative;
   background-image: linear-gradient(40deg, #f1f1f1, #E5E8EE);
   padding: 2rem;
@@ -298,6 +298,50 @@ p{
 
 .serv-image{
   width: 50px;
+}
+
+
+
+
+/* ========TEAM STYLES========= */
+.item{
+  /* padding-top: 100px !important; */
+  background: #ffffff !important;
+}
+
+
+.coloured{ 
+  background-color: #3c3c3f88;
+  position: relative;
+  height: 90px;
+  background-image: url('../public//Images/card-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+
+.slick-slide>div {padding: 0 7px;}
+
+.member-image{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  overflow: hidden !important;
+  border-radius: 100% !important;
+  border: 3px solid #ffffff;
+  background-color: #edf0f4;
+}
+
+.member-image img{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-position: center;
 }
 
 

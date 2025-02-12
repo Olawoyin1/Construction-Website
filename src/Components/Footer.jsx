@@ -119,20 +119,14 @@ const Footer = () => {
                 </ul>
 
 
-                {/* <ul className='p-0 mt-5 mt-sm-4 d-flex align-items-center justify-content-center justify-content-sm-start align-items-sm-start flex-column gap-3 text-center'>
-                    <h6 className='fw-bold'>Quick Links</h6>
-                    <li><Link className='nav-link' to='/'>Home</Link></li>                    
-                    <li><Link className='nav-link' to='/about'>About Us</Link></li>                    
-                    <li><Link className='nav-link' to='/services'>Services</Link></li>                    
-                    <li><Link className='nav-link' to='/appointment'>Contact</Link></li>                    
-                </ul> */}
+                
 
 
                 <ul className='p-0 mt-5 mt-sm-4 d-flex  justify-content-sm-start align-items-sm-start flex-column gap-3  text-sm-start'>
                     <h6 className='fw-bold'>Services</h6>
                     <li className='d-flex align-items-center justify-content-sm-start align-items-sm-start  align-items-center gap-2'>
                     <TbArrowBadgeRightFilled />
-                        <small>Interior Design</small>
+                        <small>Construction Administration</small>
                     </li>                  
                     <li className='d-flex align-items-center justify-content-sm-start align-items-sm-start  align-items-center gap-2'>
                     <TbArrowBadgeRightFilled />
@@ -140,7 +134,7 @@ const Footer = () => {
                     </li>                    
                     <li className='d-flex align-items-center justify-content-sm-start align-items-sm-start align-items-center gap-2'>
                     <TbArrowBadgeRightFilled />
-                        <small>Construction Management</small>
+                        <small>Project Management</small>
                     </li>                    
                     <li className='d-flex align-items-center justify-content-sm-start align-items-sm-start  align-items-center gap-2'>
                     <TbArrowBadgeRightFilled />
@@ -148,11 +142,11 @@ const Footer = () => {
                     </li>                                       
                     <li className='d-flex align-items-center  justify-content-sm-start align-items-sm-start  align-items-center gap-2'>
                     <TbArrowBadgeRightFilled />
-                        <small>Tiling & Painting</small>
+                        <small>Facility Management</small>
                     </li>                                       
                     <li className='d-flex align-items-center  justify-content-sm-start align-items-sm-start  align-items-center gap-2'>
                     <TbArrowBadgeRightFilled />   
-                        <small>Project Planning</small>
+                        <small>Master Planning</small>
                     </li>                                       
                 </ul>
 
