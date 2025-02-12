@@ -67,7 +67,7 @@ const ContactCard = () => {
             {
               img: "../../Images/telephone.png",
               title: "Call Us Now",
-              details: ["+(234)8023449081", "+(234)8023449081"],
+              details: ["+(234)8039364605", "+(234)8024302868"],
             },
             {
               img: "../../Images/time.png",
@@ -77,13 +77,13 @@ const ContactCard = () => {
             {
               img: "../../Images/support.png",
               title: "Need Support",
-              details: ["konstruction@gmail.com", "services@gmail.com"],
+              details: ["info@360uniqueconstruction.com", "olawuni7@gmail.com"],
             },
             {
               img: "../../Images/pin.png",
               title: "Our Address",
               details: [
-                "No 19, Olarewaju Clement street, Oke Oko Isawo, Ikorodu Lagos State",
+                "12, Church Street, Gbagada, Lagos",
               ],
             },
           ].map((item, index) => (

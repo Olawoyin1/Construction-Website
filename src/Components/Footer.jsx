@@ -108,7 +108,7 @@ const Footer = () => {
             <div className="grid flex-wrap">
 
                 <ul className='p-0  mt-5 mt-sm-4 d-flex  justify-content-sm-start align-items-sm-start flex-column gap-3 '>
-                    <h6 className='fw-bold'>Konstruction.</h6>
+                    <img src="../../Images/logo.png" className="logo" alt="" />
                     <small className=' text-sm-start'>Get the care you deserve with our reliable, professional, and patient-focused healthcare services.</small>
                     <div className="socials  d-flex align-items-center gap-3">
                         <FaXTwitter className='muted' size={20}/>
@@ -160,8 +160,8 @@ const Footer = () => {
                 <ul className='p-0 d-flex   justify-content-sm-start align-items-sm-start flex-column gap-3  text-sm-start mt-5 mt-sm-4'>
                     <h6 className='fw-bold'>Quick Contact</h6>
                     <small>If you have any question or need help, feel free to contact our team</small>                   
-                    <h5 className='fw-bolder'> <FaPhone />+(234) 8123443332</h5> 
-                    <small>No 19, Olarewaju Clement street, Oke Oko Isawo, Ikorodu Lagos State</small>                
+                    <h5 className='fw-bolder'> <FaPhone />+(234) 8039364605</h5> 
+                    <small>12, Church Street, Gbagada, Lagos</small>                
                 </ul>
 
 

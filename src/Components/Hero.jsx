@@ -209,7 +209,7 @@ const Hero = () => {
         <div className="container2">
           <nav className="d-flex header align-items-center justify-content-between">
             <Link to="/">
-              <h4 className="navbar-brand fw-bolder">Konstruction.</h4>
+              <img src="../../Images/logo.png" className="logo" alt="" />
             </Link>
 
             {/* Desktop Menu */}
