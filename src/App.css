@@ -309,6 +309,10 @@ p{
   background: #ffffff !important;
 }
 
+.team{
+  overflow: hidden !important;
+}
+
 
 .coloured{ 
   background-color: #3c3c3f88;

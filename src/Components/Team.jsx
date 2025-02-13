@@ -113,7 +113,7 @@ const Team = ({ data, search, header, title, liked, setLiked }) => {
   ];
 
   return (
-    <div className="my-4 testimonials py-4">
+    <div className="my-4 team py-4">
       <div className="container2">
         <h3 className="text-center fw-bold">Meet Our Team</h3>
         <p className="lead text-center">Experienced builders dedicated to quality and innovation.</p>

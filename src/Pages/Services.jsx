@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar'
 import FAQ from '../Components/FAQ'
 import ContactCard from '../Components/ContactCard'
 import WhyUs from '../Components/WhyUs'
+import Team from '../Components/Team'
 
 const Services = () => {
   return (
@@ -15,6 +16,7 @@ const Services = () => {
         </div>
         <ServiceCard />
         <WhyUs />
+        <Team />
         <FAQ />
         <ContactCard />
     </div>

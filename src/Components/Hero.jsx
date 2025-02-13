@@ -234,7 +234,12 @@ const Hero = () => {
                   Contact
                 </Link>
               </li>
-              <button className="main-btn">+(234) 8123499082</button>
+              <li>
+                <Link className="nav-link text-white" to="/gallery">
+                  Gallery
+                </Link>
+              </li>
+              <button className="main-btn">+(234) 8039364605</button>
             </ul>
 
             {/* Mobile Menu Button */}
@@ -294,9 +299,18 @@ const Hero = () => {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="nav-link text-white py-2"
+                    to="/gallery"
+                    onClick={toggleMenu}
+                  >
+                    Gallery
+                  </Link>
+                </li>
 
                 <ul className="p-0  mt-2 mt-sm-4 d-flex  justify-content-sm-start align-items-sm-start flex-column gap-3 ">
-                  <h6 className="fw-bold">Konstruction.</h6>
+                  <h6 className="fw-bold">360 unique designs and construction Ltd.</h6>
                   <small className=" text-sm-start">
                     Get the care you deserve with our reliable, professional,
                     and patient-focused healthcare services.
@@ -309,7 +323,7 @@ const Hero = () => {
                   </div>
                 </ul>
                 <button className="main-btn mt-2" onClick={toggleMenu}>
-                  +(234) 8123499082
+                +(234) 8039364605
                 </button>
 
                 <motion.div
